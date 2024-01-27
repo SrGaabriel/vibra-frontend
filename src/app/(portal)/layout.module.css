@@ -1,0 +1,92 @@
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+}
+
+.sidebar {
+    position: sticky;
+    width: 25%;
+    height: 100%;
+    padding: 24px 8px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.postButton {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    height: 48px;
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+    border-radius: 48px;
+    font-size: 18px;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.postButton:hover {
+    background-color: var(--primary-hover);
+    font-size: 19px;
+}
+
+.sidebarProfile {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 64px;
+    padding: 8px;
+    background-color: rgb(226, 226, 226);
+    margin-top: auto;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebarProfile:hover {
+    background-color: rgb(215, 215, 215);
+}
+
+.sidebarProfileText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 12px;
+}
+
+.sidebarProfileTextTag {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+
+.sidebarProfileTextName {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(68, 68, 68)
+}
+
+.page {
+    width: 50%;
+    border-left: 1px solid var(--secondary);
+    border-right: 1px solid var(--secondary);
+}
+
+.connectionBar {
+    width: 30%;
+}

@@ -1,0 +1,25 @@
+.post {
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.post:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.authorDisplayName {
+    font-size: 16px;
+}
+
+.authorHandle {
+    font-size: 15px;
+}
+
+.content {
+    font-size: 17px;
+    margin-top: 4px;
+}
+
+.action {
+    font-size: 12px;
+}

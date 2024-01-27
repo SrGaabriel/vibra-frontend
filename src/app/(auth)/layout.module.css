@@ -1,0 +1,140 @@
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+.authPageBackground {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  animation: bg-scrolling-reverse 0.92s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+}
+
+.authPage {
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.authPageContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.authPageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-left: 1px solid #333;
+    height: 100vh;
+}
+
+.formTitle {
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    line-height: 38.4px;
+    text-transform: uppercase;
+    margin-top: 20%;
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.formFieldName {
+    margin-top: 15%;
+    margin-bottom: 3%;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.formFieldInput {
+    height: 50px;
+    width: 360px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid gray;
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    font-size: 18px;
+    padding-left: 5%;
+}
+
+.confirmButton {
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15%;
+    height: 50px;
+    width: 360px;
+    border-radius: 6px;
+    border: none;
+    color: var(--background);
+    background-color: rgb(15, 161, 214);
+    transition: all 0.3s ease-in-out;
+}
+
+.confirmButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(15, 161, 214);
+}

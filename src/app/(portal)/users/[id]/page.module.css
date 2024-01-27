@@ -1,0 +1,88 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.profile {
+    border-bottom: 1px solid var(--secondary);
+}
+
+.profileMedia {
+    position: relative;
+    height: 280px;
+    width: 100%;
+}
+
+.profileBanner {
+    height: 240px;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+
+.profilePicture {
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+    border-radius: 100%;
+    border: 3px solid var(--background);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+}
+
+.profileInfoName {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.profileDisplayName {
+    font-family: 'Mansrope', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.profileUsername {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: gray;
+}
+
+.profileDescription {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    padding-top: 3.5rem;
+}
+
+.reachedTheEnd {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}

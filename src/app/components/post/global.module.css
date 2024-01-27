@@ -1,0 +1,111 @@
+.post {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+.innerPost {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.avatarSection {
+    width: auto;
+    height: 100%;
+}
+
+.avatar {
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.postInfo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.authorInfo {
+    display: flex;
+    color: var(--text);
+    gap: 6px;
+}
+
+.authorInfo > :link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.authorDisplayName {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.authorHandle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: rgb(83, 100, 113)
+}
+
+.content {
+    color: var(--text);
+    display: block;
+    font-family: 'Rubik', sans-serif;
+}
+
+.actions {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    margin-top: 0.6rem;
+}
+
+.action {
+    font-style: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text);
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+    padding: 4px 4px;
+    border-radius: 64px;
+}
+
+.action:hover .actionIcon {
+    filter: invert(24%) sepia(97%) saturate(7491%) hue-rotate(334deg) brightness(102%) contrast(98%);
+}
+
+.action:hover .actionValue {
+    color: #fc0a5a;
+}
+
+.actionIcon:not(.activatedActionIcon) {
+    filter: brightness(0) saturate(100%) invert(43%) sepia(10%) saturate(626%) hue-rotate(227deg) brightness(94%) contrast(84%);
+}
+
+.action:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.activatedActionIcon {
+    filter: invert(24%) sepia(97%) saturate(7491%) hue-rotate(334deg) brightness(102%) contrast(98%);
+}
+
+.actionValue {
+    color: #746a7e;
+}
+
+.activatedActionValue {
+    color: #fc0a5a;
+}
+
+.actionLike:hover {
+    background-color: #fc0a5b2d;
+}

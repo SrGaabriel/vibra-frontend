@@ -1,0 +1,105 @@
+.postActionModal {
+    position: fixed;
+    width: 600px;
+    height: 300px;
+    border: none;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.postActionModalContainer {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    border-radius: 12px;
+}
+
+.postActionModalContent {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 56px);
+    flex-direction: row;
+    padding: 12px;
+    padding-top: 24px;
+}
+
+.postActionModalTextArea {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: var(--text);
+    font-family: 'Rubik', sans-serif;
+    padding: 12px;
+    width: 100%;
+    font-size: 20px;
+    resize: none;
+}
+
+.postActionModalProfilePicture {
+    border-radius: 100%;
+    border: 2px solid var(--background);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.postActionModalActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    padding: 0 18px;
+    border-top: 1px solid var(--secondary);
+}
+
+.postActionModalPostButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+    border-radius: 128px;
+    font-size: 18px;
+    padding: 8px;
+    width: 72px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.postActionModalPostButton:hover {
+    background-color: var(--primary-hover);
+}
+
+.postActionModalHeader {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 32px;
+    padding: 0 12px;
+}
+
+.postActionModalCloseButton {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--text);
+    height: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.postActionModalCloseButton:hover {
+    background-color: rgba(55, 55, 55, 0.212);
+}
