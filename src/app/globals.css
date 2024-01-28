@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Manrope:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300;500&family=Roboto+Mono:wght@300&family=Roboto:wght@100;400&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Manrope:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300;500&family=Roboto+Mono:wght@300&family=Roboto:wght@100;300;400&family=Rubik:wght@300;400&display=swap');
 
 :root {
   --max-width: 1100px;
@@ -13,6 +13,7 @@
 
   --text: #161915;
   --background: #fafaf9;
+  --background-selection: #e7e7e3;
   --primary: #56e67f;
   --primary-hover: #42bd65;
   --secondary: #d4d9d3;

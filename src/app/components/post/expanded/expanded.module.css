@@ -1,0 +1,50 @@
+
+.postContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 16px;
+}
+
+.postIdentifier {
+    gap: 14px;
+}
+
+.postAuthor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.postAuthorName {
+    font-size: 16px;
+}
+
+.postAuthorName:hover {
+    text-decoration: underline;
+}
+
+.postAuthorHandle {
+    font-size: 14px;
+}
+
+.postText {
+    font-size: 16px;
+}
+
+.postDate {
+    font-size: 14px;
+}
+
+.postActions {
+    justify-content: space-around;
+    height: 50px;
+    border-top: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.action {
+    padding: 4px 4px;
+    border-radius: 64px;
+    font-size: 14px;
+}

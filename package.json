@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.0.0",
+    "next": "^14.1.0",
     "react": "^18",
     "react-dom": "^18",
     "swr": "^2.2.4"
@@ -21,5 +21,13 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
     "typescript": "^5"
+  },
+  "compilerOptions": {
+    "lib": [
+      "es2020",
+      "esnext"
+    ],
+    "module": "commonjs",
+    "target": "es2020"
   }
 }

@@ -3,12 +3,12 @@
 import { userDataFetcher, userPostsFetcher } from "@/app/api/user";
 import Image from "next/image";
 import styles from './page.module.css'
-import Post, { PostViewType } from "@/app/components/post/Post";
 import useSWR from "swr";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { usePortalContext } from "../../PortalContext";
 import LoadingSector from "@/app/components/loading/LoadingSector";
 import PortalHeader from "@/app/components/header/PortalHeader";
+import CompactPost from "@/app/components/post/compact/CompactPost";
 
 const User = ({params}: { params : { id: number } }) => {
     const {token} = usePortalContext().state;
@@ -91,13 +91,10 @@ const User = ({params}: { params : { id: number } }) => {
             </div>
             <div className={styles.posts}>
                 {postsState.posts.map((post: any, index: number) => (
-                    <Post
-                        view={PostViewType.COMPACT}
-                        key={post.id}
+                    <CompactPost
+                        key={index}
                         id={post.id}
-                        index={index}
-                        total={postsState.posts.length}
-                        authorId={user.id}
+                        authorId={post.authorId}
                         authorName={user.displayName}
                         authorHandle={user.username}
                         content={post.content}

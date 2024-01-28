@@ -1,0 +1,55 @@
+.post {
+    display: flex;
+    padding: 12px;
+    padding-left: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid var(--secondary);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.post:hover {
+    background-color: var(--background-selection);
+}
+
+.postAvatarSection {
+    margin: 0 12px;
+}
+
+.postContentSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.postIdentifier {
+    width: 100%;
+}
+
+.postAuthorName {
+    font-size: 16px;
+}
+
+.postAuthorHandle {
+    font-size: 13.5px;
+}
+
+.postAuthorship {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.postText {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.postActions {
+    justify-content: space-between;
+    margin: 8px 0;
+    padding-right: 64px;
+}
+
+.action {
+    font-size: 14px;
+}

@@ -1,7 +1,0 @@
-.postReplyQuestion {
-    display: flex;
-    align-items: center;
-    min-height: 80px;
-    background-color: var(--background);
-    border-bottom: 1px solid var(--secondary);
-}

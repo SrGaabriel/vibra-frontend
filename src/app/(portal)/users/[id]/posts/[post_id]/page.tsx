@@ -4,13 +4,12 @@ import { usePortalContext } from '@/app/(portal)/PortalContext';
 import styles from './page.module.css'
 import { postFetcher } from "@/app/api/post";
 import { userDataFetcher } from "@/app/api/user";
-import Post, { PostViewType } from "@/app/components/post/Post";
 
 import useSWR from "swr";
 import LoadingPage from '@/app/components/loading/LoadingPage';
 import LoadingSector from '@/app/components/loading/LoadingSector';
 import PortalHeader from '@/app/components/header/PortalHeader';
-import PostReplyQuestion from '@/app/components/post/expanded/PostReplyQuestion';
+import ExpandedPost from '@/app/components/post/expanded/ExpandedPost';
 
 const PostPage = ({params}: { params : { id: number, post_id: number } }) => {
     const { token } = usePortalContext().state;
@@ -27,12 +26,9 @@ const PostPage = ({params}: { params : { id: number, post_id: number } }) => {
     return (
         <div className={styles.post}>
             <PortalHeader title="Post"/>
-            <Post
-                view={PostViewType.EXPANDED}
+            <ExpandedPost
                 key={post.id}
                 id={post.id}
-                index={0}
-                total={1}
                 authorId={author.id}
                 authorName={author.displayName}
                 authorHandle={author.username}
@@ -47,7 +43,6 @@ const PostPage = ({params}: { params : { id: number, post_id: number } }) => {
                 }}
                 initialRelationship={post.relationship}
             />
-            <PostReplyQuestion/>
         </div>
     )
 }
