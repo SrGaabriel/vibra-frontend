@@ -1,0 +1,66 @@
+.replyRequest {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-bottom: 1px solid var(--secondary);
+}
+
+
+.replyRequestContent {
+    display: flex;
+}
+
+.replyRequestProfilePicture {
+    border-radius: 100%;
+}
+
+.replyRequestTextArea {
+    margin-left: 12px;
+    margin-top: 12px;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--text);
+    outline: none;
+    border: none;
+    resize: none;
+    height: auto;
+    width: 100%;
+}
+
+.replyRequestFooter {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.replyRequestPostButton {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 128px;
+    height: 36px;
+    width: 80px;
+    color: var(--background);
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.replyRequestPostButtonDisabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.replyRequestHeader {
+    color: gray;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 52px;
+    margin-bottom: 16px;
+}
+
+.replyRequestHeaderUsername {
+    color: var(--primary);
+}

@@ -15,6 +15,7 @@ export default class PostBarebones {
     }
 
     getPostActions(stylesheet: any, token: string, postId: number, statistics: PostStatistics, setStatistics: (statistics: PostStatistics) => void, relationship: PostRelationship, setRelationship: (relationship: PostRelationship) => void): any {
+        console.log("Statistics: ", statistics)
         return (
             <div className={stylesheet("postActions")}>
                 {this.makePostAction(stylesheet, "Reply", "/icons/comment_dots.svg", statistics.replies)}

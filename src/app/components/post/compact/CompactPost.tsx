@@ -47,7 +47,8 @@ function getFormattedDate(inputDate: Date): string {
     const now = new Date();
     const elapsedHours = Math.floor((now.getTime() - inputDate.getTime()) / (1000 * 60 * 60));
   
-    // If elapsed time is higher than 24 hours, return month date format
+
+
     if (elapsedHours >= 24) {
       const month = inputDate.toLocaleString('en-us', { month: 'short' });
       const day = inputDate.getDate();
@@ -62,6 +63,16 @@ function getFormattedDate(inputDate: Date): string {
       return `${month} ${day}, ${year}`;
     }
   
+    const elapsedMinutes = Math.floor((now.getTime() - inputDate.getTime()) / (1000 * 60));
+    if (elapsedHours === 0 && elapsedMinutes > 0) {
+        return `${elapsedMinutes}m`;
+    }
+
+    if (elapsedHours < 1 && elapsedMinutes < 1) {
+        return `now`;
+    }
+    console.log(elapsedHours, elapsedMinutes, "Haha")
+
     return `${elapsedHours}h`;
 }
 
